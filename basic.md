@@ -50,3 +50,21 @@ long、 unsigned long
 - 派生类型
 包括 --> 指针、 数组、 函数、 结构类型、 共用体类型  
 数组 和 结构 还统称为**聚合类型**
+
+
+## 定义常量的两种方式
+- **define** --> `#define indentifier value` eg: `#define LENGTH 5`
+- **const** --> `const type variable = value` eg: `const int LENGTH = 5`
+
+## 位运算符
+- & | ^ ~ 四个
+- 方式，先把值转换成二进制，然后每一位进行比较
+- **&**, 只有 1&1 = 1
+- **|**, 只有 0|0 = 0
+- **^**, 0^1 = 1; 1^0 = 1
+- 对于~, 取反，~1 = 0
+- 对于 >> 和 <<, 表示将几个二进制**右移/左移** n位，位数不变，删减新增规则有点乱，不写了
+- ref: [菜鸟教程-运算符](https://www.runoob.com/cprogramming/c-operators.html)
+
+## extra
+- 如果想要一个文件被另外一个文件引用，不用什么import之类的，很简单，同时`gcc a.c b.c`即可
